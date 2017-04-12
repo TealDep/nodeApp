@@ -1,0 +1,12 @@
+
+<h1><%for(var i=0;i<data.length;i++){ %>
+    <li>Alias Name:<%= data[i].name %> Real Name:<%= data[i].alias%></li>
+    <%}%>
+</h1>
+
+<h1>Add </h1><br>
+<form method='POST' action="/add ">
+    Alias Name<input type="text" name="name"><br>
+    Real  Name<input type="text" name="alias"><br>
+    <input type="submit" name="ADD">
+</form>
